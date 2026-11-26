@@ -1,0 +1,516 @@
+/* ==========================================================================
+   WIDGET FLOTANTE DE ACCESIBILIDAD UNIVERSAL · REDIIA UNED COSTA RICA
+   Estándar W3C WCAG 2.1 Nivel AA / AAA · Ley N.° 7600
+   ========================================================================== */
+
+/* Utilidad solo para lectores de pantalla */
+.a11y-sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Respeto automático de preferencia del sistema operativo (WCAG 2.3.3) */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Botón flotante inferior derecho (Píldora Institucional UNED) */
+.a11y-widget-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 52px;
+    padding: 0 1.15rem 0 0.9rem;
+    border-radius: 50px;
+    background: var(--color-primary, #0D3996);
+    color: #ffffff;
+    border: 2.5px solid var(--color-accent, #FBB92C);
+    font-family: var(--font-heading, 'Kanit', sans-serif);
+    font-size: 0.92rem;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 9998;
+    box-shadow: 0 10px 28px rgba(7, 38, 110, 0.38);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.a11y-widget-toggle:hover {
+    background: var(--color-primary-dark, #07266E);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(7, 38, 110, 0.48);
+}
+
+.a11y-toggle-icon {
+    font-size: 1.3rem;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a11y-active-count {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    height: 22px;
+    padding: 0 6px;
+    border-radius: 50px;
+    background: var(--color-accent, #FBB92C);
+    color: var(--color-primary-dark, #07266E);
+    font-size: 0.75rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.a11y-active-count.visible {
+    display: inline-flex;
+}
+
+/* Panel desplegable de herramientas asistivas */
+.a11y-panel {
+    position: fixed;
+    bottom: 84px;
+    right: 20px;
+    width: 372px;
+    max-width: calc(100vw - 24px);
+    max-height: calc(100vh - 108px);
+    overflow-y: auto;
+    background: #ffffff;
+    color: var(--color-gray-900, #0F172A);
+    border: 2px solid var(--color-primary, #0D3996);
+    border-top: 5px solid var(--color-accent, #FBB92C);
+    border-radius: 16px;
+    padding: 1.15rem 1.2rem;
+    z-index: 9999;
+    box-shadow: 0 22px 54px rgba(7, 38, 110, 0.3);
+}
+
+.a11y-panel[hidden] {
+    display: none !important;
+}
+
+.a11y-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--color-neutral-border, #E2E5EA);
+}
+
+.a11y-panel-title {
+    font-family: var(--font-heading, 'Kanit', sans-serif);
+    color: var(--color-primary-dark, #07266E);
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.a11y-close-btn {
+    background: var(--color-gray-100, #F1F5F9);
+    border: 1px solid var(--color-neutral-border, #E2E5EA);
+    border-radius: 8px;
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--color-gray-800, #1E293B);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s ease;
+}
+
+.a11y-close-btn:hover {
+    background: var(--color-primary-soft, #EEF4FC);
+    color: var(--color-primary, #0D3996);
+}
+
+/* Control de escala de texto */
+.a11y-fontsize-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+    margin-bottom: 0.65rem;
+}
+
+.a11y-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.a11y-btn {
+    background: var(--color-gray-50, #F8FAFC);
+    border: 1.5px solid var(--color-neutral-border, #E2E5EA);
+    border-radius: 9px;
+    padding: 0.55rem 0.65rem;
+    font-family: var(--font-heading, 'Kanit', sans-serif);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-gray-800, #1E293B);
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    line-height: 1.25;
+    min-height: 40px;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.a11y-btn:hover {
+    background: var(--color-primary-soft, #EEF4FC);
+    border-color: var(--color-primary, #0D3996);
+}
+
+.a11y-btn.active,
+.a11y-btn[aria-pressed="true"] {
+    background: var(--color-primary, #0D3996);
+    color: #ffffff;
+    border-color: var(--color-primary, #0D3996);
+}
+
+.a11y-btn-center {
+    justify-content: center;
+    text-align: center;
+}
+
+.a11y-btn-full {
+    grid-column: span 2;
+}
+
+/* Atajos desplegables dentro del panel */
+.a11y-shortcuts-details {
+    background: var(--color-gray-50, #F8FAFC);
+    border: 1px solid var(--color-neutral-border, #E2E5EA);
+    border-radius: 9px;
+    padding: 0.5rem 0.7rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.78rem;
+    color: var(--color-gray-700, #334155);
+}
+
+.a11y-shortcuts-details summary {
+    cursor: pointer;
+    font-family: var(--font-heading, 'Kanit', sans-serif);
+    font-weight: 600;
+    color: var(--color-primary-dark, #07266E);
+}
+
+.a11y-shortcuts-list {
+    list-style: none;
+    margin-top: 0.45rem;
+    padding: 0;
+    display: grid;
+    gap: 0.3rem;
+}
+
+.a11y-shortcuts-list kbd {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 0.05rem 0.35rem;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.74rem;
+    color: var(--color-gray-900, #0F172A);
+}
+
+.a11y-panel-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 0.65rem;
+    border-top: 1px solid var(--color-neutral-border, #E2E5EA);
+    flex-wrap: wrap;
+}
+
+.a11y-reset-btn {
+    font-size: 0.8rem;
+    font-family: var(--font-heading, 'Kanit', sans-serif);
+    font-weight: 700;
+    color: var(--color-primary, #0D3996);
+    background: none;
+    border: none;
+    padding: 0.25rem 0.35rem;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.a11y-reset-btn:hover {
+    text-decoration: underline;
+    background: var(--color-primary-soft, #EEF4FC);
+}
+
+.a11y-statement-link {
+    font-size: 0.8rem;
+    font-family: var(--font-heading, 'Kanit', sans-serif);
+    font-weight: 700;
+    color: var(--color-primary-dark, #07266E);
+    text-decoration: none;
+}
+
+.a11y-statement-link:hover {
+    text-decoration: underline;
+}
+
+/* Regla / Guía horizontal de lectura */
+#a11y-reading-guide {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 40vh;
+    height: 40px;
+    background: rgba(251, 185, 44, 0.22);
+    border-top: 2px solid #FBB92C;
+    border-bottom: 2px solid #0D3996;
+    pointer-events: none;
+    z-index: 9997;
+    display: none;
+}
+
+#a11y-reading-guide.active {
+    display: block;
+}
+
+/* ==========================================================================
+   MODOS ASISTIVOS GLOBALES (WCAG 2.1 AA / AAA)
+   ========================================================================== */
+
+/* 1. Escala de texto */
+html.a11y-font-lg { font-size: 115% !important; }
+html.a11y-font-xl { font-size: 130% !important; }
+
+/* 2. Modo Monocromático: aplicado a contenedores de contenido (NO a html)
+      para no romper position:fixed del botón flotante, panel ni regla de lectura */
+html.a11y-grayscale header,
+html.a11y-grayscale main,
+html.a11y-grayscale footer {
+    filter: grayscale(100%) !important;
+}
+
+/* 3. Tipografía para Dislexia */
+html.a11y-dyslexia body,
+html.a11y-dyslexia p,
+html.a11y-dyslexia li,
+html.a11y-dyslexia a,
+html.a11y-dyslexia button,
+html.a11y-dyslexia input,
+html.a11y-dyslexia td,
+html.a11y-dyslexia th,
+html.a11y-dyslexia h1,
+html.a11y-dyslexia h2,
+html.a11y-dyslexia h3,
+html.a11y-dyslexia h4 {
+    font-family: 'OpenDyslexic', 'Comic Sans MS', 'Trebuchet MS', Arial, sans-serif !important;
+    letter-spacing: 0.05em !important;
+    word-spacing: 0.1em !important;
+}
+
+/* 4. Espaciado Ampliado (WCAG 1.4.12) */
+html.a11y-spacing body,
+html.a11y-spacing p,
+html.a11y-spacing li,
+html.a11y-spacing td,
+html.a11y-spacing th {
+    line-height: 1.85 !important;
+    letter-spacing: 0.06em !important;
+    word-spacing: 0.12em !important;
+}
+html.a11y-spacing p {
+    margin-bottom: 1.25em !important;
+}
+
+/* 5. Resaltar Enlaces */
+html.a11y-highlight-links a {
+    text-decoration: underline !important;
+    text-decoration-thickness: 3px !important;
+    text-decoration-color: #FBB92C !important;
+    text-underline-offset: 3px !important;
+    font-weight: 700 !important;
+}
+
+/* 6. Detener Animaciones */
+html.a11y-reduce-motion *,
+html.a11y-reduce-motion *::before,
+html.a11y-reduce-motion *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+}
+
+/* 7. Cursor Grande de Alto Contraste */
+html.a11y-big-cursor,
+html.a11y-big-cursor body {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Cpath d='M4 3L4 30L12 22L18 33L22 31L16 20L27 20Z' fill='%2307266E' stroke='%23FBB92C' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E") 4 3, auto !important;
+}
+html.a11y-big-cursor a,
+html.a11y-big-cursor button,
+html.a11y-big-cursor summary,
+html.a11y-big-cursor label {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Cpath d='M4 3L4 30L12 22L18 33L22 31L16 20L27 20Z' fill='%23FBB92C' stroke='%2307266E' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E") 4 3, pointer !important;
+}
+
+/* 8. Modo Alto Contraste AAA (Ratio > 14:1 sin conflictos en botones dorados) */
+html.a11y-high-contrast body,
+html.a11y-high-contrast .section,
+html.a11y-high-contrast .section-alt,
+html.a11y-high-contrast .header,
+html.a11y-high-contrast .header-top-bar,
+html.a11y-high-contrast .hero,
+html.a11y-high-contrast .hero-a11y,
+html.a11y-high-contrast .footer,
+html.a11y-high-contrast .footer-logos {
+    background: #0b0f19 !important;
+    color: #ffffff !important;
+    border-color: #FFD700 !important;
+}
+
+html.a11y-high-contrast .card,
+html.a11y-high-contrast .pilar-card,
+html.a11y-high-contrast .quienes-box,
+html.a11y-high-contrast .encuentro-card,
+html.a11y-high-contrast .clausula-alert,
+html.a11y-high-contrast .team-card,
+html.a11y-high-contrast .team-card-header,
+html.a11y-high-contrast .principio-card,
+html.a11y-high-contrast .umbrales-tool,
+html.a11y-high-contrast .umbrales-result-box,
+html.a11y-high-contrast .umbral-check-label,
+html.a11y-high-contrast .step-card,
+html.a11y-high-contrast .nodo-panel,
+html.a11y-high-contrast .nodo-item,
+html.a11y-high-contrast .visor-dual-wrapper,
+html.a11y-high-contrast .visor-toolbar,
+html.a11y-high-contrast .visor-doc-item,
+html.a11y-high-contrast .informes-resumen-card,
+html.a11y-high-contrast .campana-showcase,
+html.a11y-high-contrast .diag-card,
+html.a11y-high-contrast .info-card,
+html.a11y-high-contrast .slack-hub-card,
+html.a11y-high-contrast .slack-channel-pill,
+html.a11y-high-contrast .contact-official-card,
+html.a11y-high-contrast .email-highlight-box,
+html.a11y-high-contrast details.faq-item,
+html.a11y-high-contrast .apa-citation-card,
+html.a11y-high-contrast .apa-code-box,
+html.a11y-high-contrast .hero-network-card,
+html.a11y-high-contrast .hero-kpi-box,
+html.a11y-high-contrast .hero-slack-mini,
+html.a11y-high-contrast .nav-dropdown-menu,
+html.a11y-high-contrast .a11y-panel,
+html.a11y-high-contrast .a11y-shortcuts-details,
+html.a11y-high-contrast table,
+html.a11y-high-contrast th,
+html.a11y-high-contrast td {
+    background: #111827 !important;
+    color: #ffffff !important;
+    border-color: #FFD700 !important;
+}
+
+html.a11y-high-contrast .a11y-btn,
+html.a11y-high-contrast .a11y-close-btn,
+html.a11y-high-contrast .filter-pill,
+html.a11y-high-contrast .visor-cat-btn,
+html.a11y-high-contrast .visor-search,
+html.a11y-high-contrast .btn-doc-action,
+html.a11y-high-contrast .mobile-menu-toggle {
+    background: #0b0f19 !important;
+    color: #ffffff !important;
+    border-color: #FFD700 !important;
+}
+
+html.a11y-high-contrast .a11y-btn.active,
+html.a11y-high-contrast .a11y-btn[aria-pressed="true"],
+html.a11y-high-contrast .filter-pill.active,
+html.a11y-high-contrast .visor-cat-btn.active,
+html.a11y-high-contrast .btn-doc-action.primary,
+html.a11y-high-contrast .btn-pill-gold,
+html.a11y-high-contrast .nav-dropdown-toggle,
+html.a11y-high-contrast .hero-slack-mini a,
+html.a11y-high-contrast .top-bar-badge,
+html.a11y-high-contrast .factual-badge,
+html.a11y-high-contrast .rol-badge,
+html.a11y-high-contrast .pilar-num,
+html.a11y-high-contrast .step-number,
+html.a11y-high-contrast .section-badge,
+html.a11y-high-contrast .umbral-level-badge,
+html.a11y-high-contrast .a11y-active-count {
+    background: #FFD700 !important;
+    color: #000000 !important;
+    border-color: #FFD700 !important;
+}
+
+html.a11y-high-contrast h1,
+html.a11y-high-contrast h2,
+html.a11y-high-contrast h3,
+html.a11y-high-contrast h4,
+html.a11y-high-contrast summary,
+html.a11y-high-contrast .a11y-panel-title,
+html.a11y-high-contrast .a11y-reset-btn,
+html.a11y-high-contrast .a11y-statement-link {
+    color: #FFD700 !important;
+}
+
+html.a11y-high-contrast a:not(.btn-pill-gold):not(.btn-doc-action):not(.hero-slack-mini a) {
+    color: #FFD700 !important;
+}
+
+html.a11y-high-contrast p,
+html.a11y-high-contrast li,
+html.a11y-high-contrast span:not(.top-bar-badge):not(.factual-badge):not(.rol-badge):not(.pilar-num):not(.section-badge):not(.umbral-level-badge):not(.a11y-active-count),
+html.a11y-high-contrast code,
+html.a11y-high-contrast kbd {
+    color: #ffffff !important;
+}
+
+html.a11y-high-contrast code,
+html.a11y-high-contrast kbd,
+html.a11y-high-contrast .pilar-msv-tag {
+    background: #1f2937 !important;
+    border: 1px solid #FFD700 !important;
+}
+
+html.a11y-high-contrast .logo-link {
+    background: #ffffff !important;
+    padding: 0.3rem 0.7rem !important;
+    border-radius: 10px !important;
+}
+
+@media (max-width: 640px) {
+    .a11y-widget-toggle {
+        bottom: 14px;
+        right: 14px;
+        height: 48px;
+        padding: 0 0.9rem 0 0.75rem;
+        font-size: 0.84rem;
+    }
+    .a11y-panel {
+        bottom: 72px;
+        right: 12px;
+        left: 12px;
+        width: auto;
+        max-width: none;
+    }
+}

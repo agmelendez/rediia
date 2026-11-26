@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaración de Accesibilidad Web (Ley N.° 7600 y WCAG 2.1 AA) | RedIIA UNED Costa Rica</title>
+    <meta name="description" content="Declaración oficial de accesibilidad universal del portal de la Red Institucional de Inteligencia Artificial (RedIIA) de la Universidad Estatal a Distancia (UNED) de Costa Rica, en cumplimiento de la Ley N.° 7600 y el estándar W3C WCAG 2.1 Nivel AA.">
+    <meta name="author" content="RedIIA · Rectoría y Transformación Digital · UNED Costa Rica">
+    <meta name="theme-color" content="#0D3996">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; frame-src 'self'; object-src 'self'; base-uri 'self'; form-action 'self';">
+    <link rel="canonical" href="https://www.uned.ac.cr/rediia/accesibilidad.html">
+    <link rel="alternate" type="text/plain" href="llms.txt" title="Contexto para Agentes de Inteligencia Artificial (llms.txt)">
+    <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">
+
+    <!-- Tipografías Oficiales Manual de Marca UNED (Kanit + Open Sans + JetBrains Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Kanit:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --color-primary: #0D3996;
+            --color-primary-light: #1D55C4;
+            --color-primary-dark: #07266E;
+            --color-primary-soft: #EEF4FC;
+            --color-accent: #FBB92C;
+            --color-accent-hover: #E5A31E;
+            --color-accent-soft: #FEF8EA;
+            --color-accent-dark: #4A3300;
+            --color-neutral-gray: #D5D4D4;
+            --color-neutral-border: #E2E5EA;
+            --color-white: #FFFFFF;
+            --color-gray-50: #F8FAFC;
+            --color-gray-100: #F1F5F9;
+            --color-gray-700: #334155;
+            --color-gray-800: #1E293B;
+            --color-gray-900: #0F172A;
+            --font-heading: 'Kanit', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-body: 'Open Sans', system-ui, -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-body);
+            color: var(--color-gray-900);
+            background: var(--color-gray-50);
+            line-height: 1.65;
+        }
+        h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--color-primary-dark); line-height: 1.25; }
+        .skip-link {
+            position: absolute; top: -50px; left: 0;
+            background: var(--color-primary); color: #fff;
+            padding: 10px 18px; z-index: 10000; font-weight: 700; text-decoration: none;
+        }
+        .skip-link:focus { top: 0; }
+        :focus-visible {
+            outline: 3px solid var(--color-accent) !important;
+            outline-offset: 3px !important;
+            box-shadow: 0 0 0 5px rgba(13, 57, 150, 0.75) !important;
+        }
+        .header {
+            background: #fff;
+            border-bottom: 2px solid var(--color-neutral-border);
+            position: sticky; top: 0; z-index: 100;
+            box-shadow: 0 4px 20px rgba(13,57,150,0.08);
+        }
+        .header-top-bar {
+            background: var(--color-primary-dark);
+            color: #fff; padding: 0.45rem 2rem; font-size: 0.82rem;
+            border-bottom: 1px solid rgba(251, 185, 44, 0.3);
+        }
+        .header-top-bar-content {
+            max-width: 1240px; margin: 0 auto;
+            display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;
+        }
+        .top-bar-badge {
+            background: var(--color-accent); color: var(--color-primary-dark);
+            font-family: var(--font-heading); font-weight: 700; font-size: 0.72rem;
+            padding: 0.15rem 0.5rem; border-radius: 4px; margin-right: 0.4rem;
+        }
+        .header-top-bar-links { display: flex; gap: 1.15rem; flex-wrap: wrap; }
+        .header-top-bar-links a { color: rgba(255,255,255,0.92); text-decoration: none; }
+        .header-top-bar-links a:hover { color: var(--color-accent); text-decoration: underline; }
+        .header-content {
+            max-width: 1240px; margin: 0 auto; padding: 0.75rem 1.5rem;
+            display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+        }
+        .logo-link { display: inline-flex; align-items: center; gap: 0.9rem; text-decoration: none; }
+        .logo-uned { height: 40px; width: auto; object-fit: contain; }
+        .logo-unit { height: 44px; width: auto; object-fit: contain; }
+        .logo-separator { width: 1.5px; height: 32px; background: var(--color-neutral-gray); }
+        .btn-pill-gold {
+            background: var(--color-accent); color: var(--color-primary-dark);
+            font-family: var(--font-heading); font-weight: 700;
+            padding: 0.5rem 1.25rem; border-radius: 50px; border: 2px solid var(--color-accent);
+            text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;
+        }
+        .hero-a11y {
+            background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+            color: #fff; padding: 3.5rem 2rem; text-align: center;
+        }
+        .hero-a11y h1 { color: #fff; font-size: clamp(1.8rem, 3.5vw, 2.5rem); margin-bottom: 0.75rem; }
+        .hero-a11y p { max-width: 820px; margin: 0 auto; color: rgba(255,255,255,0.92); }
+        .container { max-width: 1080px; margin: 2.5rem auto; padding: 0 1.5rem; }
+        .card {
+            background: #fff; border-radius: 16px; padding: 2rem;
+            border: 1px solid var(--color-neutral-border);
+            border-top: 5px solid var(--color-primary);
+            box-shadow: 0 6px 24px rgba(13,57,150,0.06);
+            margin-bottom: 1.75rem;
+        }
+        .card h2 { margin-bottom: 1rem; font-size: 1.45rem; }
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.92rem; }
+        th, td { border: 1px solid var(--color-neutral-border); padding: 0.75rem 1rem; text-align: left; }
+        th { background: var(--color-primary-soft); color: var(--color-primary-dark); font-family: var(--font-heading); }
+        kbd {
+            background: var(--color-gray-100); border: 1px solid #cbd5e1;
+            border-radius: 5px; padding: 0.15rem 0.45rem; font-family: var(--font-mono); font-size: 0.84rem;
+        }
+        .footer { background: var(--color-primary-dark); color: #fff; margin-top: 4rem; }
+        .footer-logos {
+            background: var(--color-primary); padding: 1.5rem 2rem;
+            border-bottom: 3.5px solid var(--color-accent);
+            display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap;
+        }
+        .footer-logo-img { height: 46px; width: auto; object-fit: contain; }
+        .footer-logo-white-box {
+            background: #ffffff; padding: 0.35rem 0.85rem; border-radius: 10px;
+            display: inline-flex; align-items: center;
+        }
+        .footer-bottom { max-width: 1140px; margin: 0 auto; padding: 2rem 1.5rem; text-align: center; font-size: 0.88rem; }
+        .footer-bottom a { color: var(--color-accent); text-decoration: none; font-weight: 600; }
+    </style>
+    <link rel="stylesheet" href="assets/css/a11y-widget.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header class="header">
+        <div class="header-top-bar">
+            <div class="header-top-bar-content">
+                <div>
+                    <span class="top-bar-badge">UNED</span>
+                    <span>Universidad Estatal a Distancia &middot; Costa Rica | Rectoría &middot; Transformación Digital</span>
+                </div>
+                <div class="header-top-bar-links">
+                    <a href="index.html">🏠 Inicio RedIIA</a>
+                    <a href="llms.txt" target="_blank" rel="noopener noreferrer">🤖 llms.txt</a>
+                    <a href="https://www.uned.ac.cr" target="_blank" rel="noopener noreferrer">Portal UNED</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <a href="index.html" class="logo-link" aria-label="Volver al inicio del portal RedIIA UNED">
+                <img src="assets/img/logo-uned-azul.png" alt="UNED - Universidad Estatal a Distancia" class="logo-uned">
+                <div class="logo-separator" aria-hidden="true"></div>
+                <img src="assets/img/logo-rediia.png" alt="RedIIA - Red Institucional de Inteligencia Artificial UNED" class="logo-unit">
+            </a>
+            <a href="index.html" class="btn-pill-gold">← Volver al Portal Principal</a>
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <section class="hero-a11y">
+            <h1>♿ Declaración de Accesibilidad Universal · RedIIA UNED</h1>
+            <p>Compromiso institucional con la inclusión digital, la igualdad de oportunidades (Ley N.° 7600 de Costa Rica) y las Pautas de Accesibilidad para el Contenido Web W3C WCAG 2.1 Nivel AA / AAA.</p>
+        </section>
+
+        <div class="container">
+            <article class="card">
+                <h2>1. Compromiso Institucional y Nivel de Conformidad</h2>
+                <p>La <strong>Universidad Estatal a Distancia (UNED)</strong> y la <strong>Red Institucional de Inteligencia Artificial (RedIIA)</strong>, adscrita a la Rectoría y vinculada al Programa Estrategia de Transformación Digital, garantizan que su portal institucional sea perceptible, operable, comprensible y robusto para todas las personas usuarias, independientemente de sus capacidades sensoriales, motrices o cognitivas.</p>
+                <p style="margin-top:0.75rem;">Este portal acredita conformidad con el estándar internacional <strong>W3C WCAG 2.1 Nivel AA</strong> (con contrastes cromáticos verificados en <strong>Nivel AAA</strong> superiores a 7.4:1 y 14.2:1 en modo asistivo) y cumple con la <strong>Ley N.° 7600 (Igualdad de Oportunidades para las Personas con Discapacidad de Costa Rica)</strong>.</p>
+            </article>
+
+            <article class="card">
+                <h2>2. Herramientas Asistivas del Botón Flotante de Accesibilidad (<kbd>Alt + A</kbd>)</h2>
+                <p>En la parte inferior derecha de todas las páginas del portal se encuentra activo de forma permanente el botón flotante de accesibilidad (con persistencia automática en <code>localStorage</code> y anuncios por voz <code>aria-live="polite"</code> para lectores de pantalla):</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Herramienta Asistiva</th>
+                            <th>Función y Adaptación Visual / Cognitiva</th>
+                            <th>Nivel WCAG</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Escala de Texto (100% / 115% / 130%)</strong></td>
+                            <td>Amplía proporcionalmente todo el texto del sitio sin pérdida de contenido ni desbordamiento horizontal.</td>
+                            <td>WCAG 1.4.4 (AA)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Modo Alto Contraste (AAA)</strong></td>
+                            <td>Aplica fondo oscuro profundo (<code>#0b0f19</code>), títulos en dorado de alta luminancia (<code>#FFD700</code>) y texto blanco puro (ratio &gt; 14:1).</td>
+                            <td>WCAG 1.4.6 (AAA)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Modo Monocromático</strong></td>
+                            <td>Elimina la saturación cromática aplicando escala de grises al 100% para personas con fotosensibilidad o discromatopsia.</td>
+                            <td>Inclusión Sensorial</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4. Tipografía para Dislexia</strong></td>
+                            <td>Activa tipografía de alta legibilidad con espaciado ampliado entre caracteres y palabras para facilitar la decodificación lectora.</td>
+                            <td>Accesibilidad Cognitiva</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5. Interlineado y Espaciado Ampliado</strong></td>
+                            <td>Incrementa la altura de línea a <code>1.85</code> y el espaciado entre caracteres, palabras y párrafos.</td>
+                            <td>WCAG 1.4.12 (AA)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>6. Resaltado Visual de Enlaces</strong></td>
+                            <td>Subraya con borde dorado de <code>3px</code> y peso negrita todos los hipervínculos interactivos del portal.</td>
+                            <td>WCAG 2.4.4 (AA)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>7. Guía / Regla Horizontal de Lectura</strong></td>
+                            <td>Despliega una banda horizontal luminosa que acompaña el cursor o el tacto para mantener el foco en la línea de lectura actual.</td>
+                            <td>Apoyo de Enfoque</td>
+                        </tr>
+                        <tr>
+                            <td><strong>8. Detener Animaciones</strong></td>
+                            <td>Suspende inmediatamente órbitas decorativas y transiciones (además de respetar <code>prefers-reduced-motion</code>) para prevenir vértigo o distracción visual.</td>
+                            <td>WCAG 2.3.3 (AAA)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>9. Cursor Grande de Alto Contraste</strong></td>
+                            <td>Amplía el puntero con contorno dorado y azul institucional para facilitar el seguimiento visual y motor.</td>
+                            <td>Apoyo Motriz / Baja Visión</td>
+                        </tr>
+                        <tr>
+                            <td><strong>10. Lectura en Voz Alta (Síntesis de Voz)</strong></td>
+                            <td>Lee en español el texto seleccionado o el contenido principal de la página mediante la API nativa del navegador.</td>
+                            <td>Accesibilidad Auditiva / Cognitiva</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article class="card">
+                <h2>3. Atajos Globales de Teclado</h2>
+                <p>El portal puede navegarse al 100% utilizando únicamente el teclado mediante la tecla <kbd>Tab</kbd> y los siguientes atajos rápidos:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Combinación de Teclas</th>
+                            <th>Acción Directa en el Portal RedIIA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><kbd>Alt</kbd> + <kbd>A</kbd></td><td>Abrir o cerrar el Panel de Accesibilidad Universal.</td></tr>
+                        <tr><td><kbd>Alt</kbd> + <kbd>S</kbd></td><td>Saltar directamente al contenido principal (<code>#main-content</code>).</td></tr>
+                        <tr><td><kbd>Alt</kbd> + <kbd>1</kbd></td><td>Ir a la sección <strong>Quiénes Somos y Gobernanza en Red</strong>.</td></tr>
+                        <tr><td><kbd>Alt</kbd> + <kbd>2</kbd></td><td>Ir a la sección <strong>Normativa y 9 Principios Éticos</strong>.</td></tr>
+                        <tr><td><kbd>Alt</kbd> + <kbd>3</kbd></td><td>Ir a la sección <strong>Grupos de Trabajo (Nodos Temáticos y Sandbox)</strong>.</td></tr>
+                        <tr><td><kbd>Alt</kbd> + <kbd>4</kbd></td><td>Ir al <strong>Repositorio y Visor de Documentos Oficiales</strong>.</td></tr>
+                        <tr><td><kbd>Alt</kbd> + <kbd>5</kbd></td><td>Ir al <strong>Canal de Slack RedIIA, Servicios y Contacto Oficial</strong>.</td></tr>
+                        <tr><td><kbd>Esc</kbd></td><td>Cerrar cualquier menú desplegable, modal o panel asistivo abierto.</td></tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article class="card">
+                <h2>4. Canal Oficial de Retroalimentación y Soporte de Accesibilidad</h2>
+                <p>Si encuentra alguna barrera de acceso o requiere algún documento del repositorio de RedIIA en un formato alternativo accesible, puede comunicarse directamente con el Núcleo Gestor de la RedIIA:</p>
+                <ul style="margin-top:0.75rem; padding-left:1.5rem;">
+                    <li><strong>Correo Electrónico Oficial RedIIA:</strong> <a href="mailto:rediia@uned.ac.cr">rediia@uned.ac.cr</a></li>
+                    <li><strong>Central Telefónica UNED:</strong> +506 2527-2000</li>
+                    <li><strong>Adscripción Institucional:</strong> Rectoría UNED · Programa Estrategia de Transformación Digital, Mercedes de Montes de Oca, San José, Costa Rica.</li>
+                    <li><strong>Fecha de última revisión de accesibilidad:</strong> 26 de noviembre de 2026.</li>
+                </ul>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-logos">
+            <img src="assets/img/logo-uned-blanco.png" alt="UNED - Universidad Estatal a Distancia" class="footer-logo-img">
+            <div class="footer-logo-white-box">
+                <img src="assets/img/logo-rediia.png" alt="RedIIA UNED" style="height: 38px; width: auto;">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Universidad Estatal a Distancia (UNED) · Red Institucional de Inteligencia Artificial (RedIIA) · <a href="mailto:rediia@uned.ac.cr">rediia@uned.ac.cr</a> · <a href="https://www.uned.ac.cr" target="_blank" rel="noopener noreferrer">www.uned.ac.cr</a></p>
+            <p style="margin-top:0.65rem;">
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="license noopener noreferrer">
+                    Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0 · Ley N.° 6683)
+                </a>
+            </p>
+        </div>
+    </footer>
+    <script src="assets/js/a11y-widget.js" defer></script>
+</body>
+</html>

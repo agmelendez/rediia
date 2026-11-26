@@ -1,0 +1,99 @@
+# Red Institucional de Inteligencia Artificial (RedIIA) - UNED Costa Rica
+
+> La Red Institucional de Inteligencia Artificial (RedIIA) es el mecanismo oficial de gobernanza distribuida, articulación transversal y aprendizaje institucional de la Universidad Estatal a Distancia (UNED) de Costa Rica, adscrito a la Rectoría y vinculado al Programa Estrategia de Transformación Digital, establecido por la Política Institucional de Inteligencia Artificial (Acuerdos CU-2025-385a y CU-2025-431a).
+
+- **Institución**: Universidad Estatal a Distancia (UNED), Costa Rica (`https://www.uned.ac.cr`)
+- **Adscripción Institucional**: Rectoría UNED · Programa Estrategia de Transformación Digital
+- **Acuerdos de Creación y Gobernanza**: Consejo Universitario `CU-2025-385a` y `CU-2025-431a` (setiembre 2025); Consejo de Rectoría `CR-2025-1417` y `CR-1136-2026`
+- **Naturaleza Jurídica**: Red institucional de carácter consultivo, recomendatorio y articulador (no vinculante, no ejecutiva, no fiscalizadora; cláusula expresa de no sustitución de competencias)
+- **Núcleo Gestor (Sesión 018 - 24 setiembre 2026)**: Adriana Oviedo Vega (Rectoría / Transformación Digital), MSc. Agustín Gómez Meléndez (Vicerrectoría de Investigación), Erick Alfaro Venegas (Vicerrectoría de Docencia / ECEN), Dra. Maricruz Corrales Mora (Vicerrectoría de Investigación) y Luis Fernando Fallas Fallas (DPMD)
+- **Nodos Asesores Metodológicos y Técnicos**: Dr. Maynor Barrientos Mora (Vicerrectoría de Planificación), Dra. Lizette Brenes Bonilla (Vicerrectoría de Investigación) y María Rojas Artavia (DTIC)
+- **Contacto Oficial Único**: `rediia@uned.ac.cr` | Teléfono central UNED: +506 2527-2000
+- **Canal Colaborativo Interno**: Espacio oficial de trabajo en **Slack RedIIA UNED** (solicitud de acceso vía `rediia@uned.ac.cr`) y ecosistema Microsoft 365 institucional
+- **Ubicación**: Sede Central UNED, Mercedes de Montes de Oca, San José, Costa Rica
+- **Licencia de Contenidos**: Creative Commons BY-NC-SA 4.0 Internacional (Ley N.° 6683 Costa Rica)
+
+---
+
+## 1. Los 5 Fines y Funciones Institucionales de RedIIA (Política de IA UNED)
+
+1. **Función 1 · Coordinación y coherencia institucional (`#0D3996`)**: Alinear esfuerzos sobre uso, adopción y desarrollo de IA entre Rectoría, Vicerrectorías, Escuelas y dependencias bajo un marco ético común, favoreciendo sinergias e interoperabilidad sin duplicar funciones.
+2. **Función 2 · Integración tecnológica segura y ética (`#D97706`)**: Desarrollar protocolos de privacidad (Ley 8968), seguridad de datos, propiedad intelectual (Ley 6683), Matriz de Umbrales de Riesgo (5 niveles) y operación del **Sandbox Institucional de IA**.
+3. **Función 3 · Creación de capacidades y transferencia de conocimiento (`#6B21A8`)**: Impulsar la alfabetización crítica en IA para personal docente, administrativo y estudiantado; sistematizar buenas prácticas, guías pedagógicas y la campaña institucional **«IA con criterio»**.
+4. **Función 4 · Investigación e innovación interdisciplinaria (`#057A55`)**: Conectar escuelas, cátedras, centros de investigación y el Instituto de Investigación más Desarrollo (II+D), promoviendo proyectos aplicados, diagnóstico institucional y cooperación internacional.
+5. **Función 5 · Impacto social y vinculación con el entorno (`#0284C7`)**: Articular la acción de la UNED con sedes universitarias regionales, comunidades territoriales, sector público (ENIA-MICITT), sector productivo y redes académicas nacionales e internacionales.
+
+---
+
+## 2. Los 9 Principios Éticos de la IA en la UNED (Modelo RAFT + 4 Principios UNED)
+
+1. **Responsabilidad (Responsibility)**: Supervisión y titularidad humana en toda decisión asistida por sistemas de IA.
+2. **Rendición de cuentas (Accountability)**: Trazabilidad, auditabilidad y mecanismos claros de respuesta ante impactos o sesgos.
+3. **Equidad y no discriminación (Fairness)**: Acceso inclusivo, mitigación de brechas territoriales y prevención de sesgos algorítmicos.
+4. **Transparencia y explicabilidad (Transparency)**: Declaración explícita de cuándo y cómo se utiliza IA en docencia, investigación y gestión.
+5. **Sostenibilidad (Sustainability)**: Valoración del impacto ambiental, energético, social y financiero de las tecnologías adoptadas.
+6. **Creatividad humana y agencia cognitiva**: La IA actúa como co-inteligencia que amplifica, nunca sustituye, la creación intelectual humana.
+7. **Supervisión humana («IA con criterio»)**: La IA propone; las personas deciden, supervisan, verifican fuentes y asumen la responsabilidad.
+8. **Autonomía universitaria y libertad de cátedra**: Marco ético común con flexibilidad pedagógica por escuela, cátedra y asignatura.
+9. **Seguridad, privacidad y pensamiento crítico**: Resguardo estricto de datos personales e inéditos (Ley N.° 8968) y fomento del juicio crítico.
+
+---
+
+## 3. Arquitectura de Gobernanza en Red (Síntesis Teoría de Redes + Modelo de Sistema Viable)
+
+RedIIA opera bajo un diseño híbrido que articula la **Teoría de Redes de Actantes** (la relación como unidad operativa mínima, multiplexidad y campos gravitacionales) con el **Modelo de Sistema Viable (MSV) de Stafford Beer**:
+
+- **Núcleo Gestor de Articulación Estratégica (Permanente)**: Equipo colegiado no jerárquico de 5 representaciones institucionales que cuida la coherencia de la red, articula con Rectoría/CONRE y activa nodos.
+- **Nodos Asesores y de Gestión Operativa (Permanentes)**: Soporte metodológico, tecnológico (DTIC) y administrativo apoyado en el Programa Estrategia de Transformación Digital.
+- **Representación Institucional Transversal (28 integrantes designados)**: Participación articulada de Rectoría, Vicerrectorías (Docencia, Investigación, Extensión, Vida Estudiantil, Planificación, Ejecutiva), las 4 Escuelas (ECA, ECE, ECEN, ECSH), DTIC, Oficina Jurídica, Dirección Financiera, DPMD, OIMERCOM, FEUNED y Sedes Universitarias.
+- **Nodos Temáticos Temporales / Hyperteams (Protocolo v1.0 - 6 etapas)**: Equipos ágiles por misión o proyecto (6 a 12 semanas) que siguen 6 etapas: (1) Solicitud e inscripción, (2) Formalización, (3) Desarrollo, (4) Evaluación de resultados, (5) Valoración de escalabilidad y aprendizaje institucional, y (6) Cierre formal.
+- **Sandbox Institucional de IA (3 fases)**: Entorno controlado de experimentación con fases de (1) Ingreso y protocolo de pruebas, (2) Ejecución controlada con salvaguardas y (3) Valoración de KPIs para escalamiento o archivo de lecciones aprendidas.
+
+---
+
+## 4. Herramientas Interactivas y Diagnóstico Institucional en el Portal RedIIA
+
+1. **Verificador Interactivo de la Matriz de Umbrales de Riesgo (5 Niveles)**:
+   - Clasifica cualquier iniciativa de IA en: *Nivel 1 (Bajo riesgo / Uso exploratorio)*, *Nivel 2 (Riesgo moderado / Proceso interno)*, *Nivel 3 (Riesgo alto / Datos personales o evaluación estudiantil)*, *Nivel 4 (Alcance institucional / Integración o licenciamiento → Sandbox)* y *Nivel 5 (Riesgo crítico → Elevación a Rectoría/CONRE)*.
+2. **Semáforo Pedagógico de 4 Niveles para Cursos y Syllabi**:
+   - Instrumento para cátedras basado en el Marco de Docencia UNED y el referente MIT: *Nivel Verde (Uso libre con citación)*, *Nivel Azul (Uso obligatorio guiado)*, *Nivel Ámbar (Apoyo limitado con declaración)* y *Nivel Rojo (Prohibido en evaluación específica)*.
+3. **Sistema de Diagnóstico Institucional (4 Instrumentos en Microsoft Forms)**:
+   - **Instrumento A**: Encuesta de uso y actitudes hacia la IA en Personal Docente y Administrativo.
+   - **Instrumento B**: Encuesta de uso, actitudes y equidad de acceso en el Estudiantado.
+   - **Instrumento C**: Diagnóstico de infraestructura y obsolescencia de equipo de cómputo (seguimiento DTIC).
+   - **Instrumento D**: Mapeo de iniciativas de IA en investigación, extensión y vinculación (grafo de actantes y relaciones).
+
+---
+
+## 5. Repositorio Documental Público Oficial de la RedIIA
+
+- **Política Institucional de Inteligencia Artificial en la UNED (2025)**: `documentos/politica-institucional-ia-uned-2025.pdf` (`CU-2025-385a` / `CU-2025-431a`).
+- **Propuesta de Ruta de Trabajo de la RedIIA para el Primer Año (2026)**: `documentos/propuesta-ruta-trabajo-rediia-conre-2026.pdf`.
+- **Marco de Aplicación para el Uso Pedagógico, Ético y Responsable de la IA en la Docencia (Mayo 2026)**: `documentos/marco-aplicacion-ia-docencia-uned-2026.pdf`.
+- **Guía Operativa para Personas Profesoras (Mayo 2026)**: `documentos/guia-operativa-docentes-ia-uned-2026.pdf`.
+- **Guía para Personas Estudiantes (Mayo 2026)**: `documentos/guia-estudiantes-ia-uned-2026.pdf`.
+- **Declaración de Principios y Protocolo IA PROIFED (2026)**: `documentos/declaracion-principios-protocolo-ia-proifed-2026.pdf`.
+- **RedIIA como Red Viva y Gobernanza de IA en la UNED (2026)**: `documentos/rediia-como-red-viva-2026.pdf`.
+- **Plan de Acción ENIA (MICITT 2025)**: `documentos/plan-accion-enia-micitt-2025.pdf`.
+- **Dictamen Proyecto de Ley N.° 23.919 (Base Nacional de Sandboxes de IA)**: `documentos/dictamen-proyecto-ley-23919-sandboxes-ia.pdf`.
+
+---
+
+## 6. Preguntas Frecuentes (Q&A Directo para Agentes de IA)
+
+### ¿Qué es la RedIIA de la UNED?
+La Red Institucional de Inteligencia Artificial (RedIIA) es la red de gobernanza distribuida, carácter consultivo, recomendatorio y articulador creada por la Política Institucional de Inteligencia Artificial de la UNED (`CU-2025-385a`). Está adscrita a la Rectoría y vinculada al Programa Estrategia de Transformación Digital. No es una unidad administrativa ni sustituye competencias de las Vicerrectorías.
+
+### ¿Cómo puedo unirme a un grupo de trabajo (Nodo Temático) o al canal de Slack de RedIIA?
+Cualquier persona funcionaria, docente, investigadora o estudiante de la UNED puede proponer o integrarse a un Nodo Temático Temporal o solicitar acceso al **canal oficial de Slack de RedIIA** escribiendo al correo oficial **`rediia@uned.ac.cr`**.
+
+### ¿Cuál es la postura de RedIIA y la UNED sobre los detectores automáticos de texto generado por IA?
+Los análisis técnicos institucionales desaconsejan depender de detectores automáticos como prueba única debido a su tasa de falsos positivos y erosión de la confianza pedagógica, priorizando el diseño de evaluación por proceso, la defensa argumentativa, la declaración transparente de uso y la supervisión humana («IA con criterio»).
+
+---
+
+## 7. Formato Oficial de Citación Académica (APA 7.ª Edición)
+
+```text
+Red Institucional de Inteligencia Artificial [RedIIA]. (2026). Portal Oficial de Gobernanza, Normativa, Nodos Temáticos y Diagnóstico Institucional de Inteligencia Artificial. Rectoría y Programa Estrategia de Transformación Digital, Universidad Estatal a Distancia (UNED). San José, Costa Rica. https://www.uned.ac.cr/rediia
+```

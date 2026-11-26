@@ -1,0 +1,21 @@
+# Bloqueo estricto de archivos internos, temporales y borradores en repositorio público GitHub
+.DS_Store
+Thumbs.db
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.pptx
+*.ppt
+*.loop
+*.py
+*.bak
+*.tmp
+_tmp_*
+Sesiones*
+Transcripci*
+Borrador*
+Asignados*
+Desayuno*
+DICCIONARIO_*
+MEJORES_PRACTICAS_*

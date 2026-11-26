@@ -1,0 +1,196 @@
+{
+  "unidad_institucional": "Red Institucional de Inteligencia Artificial (RedIIA) - UNED Costa Rica",
+  "anio": 2026,
+  "licencia": "CC BY-NC-SA 4.0 Internacional (Ley N.° 6683 Costa Rica)",
+  "registros": [
+    {
+      "id": "INF-REDIIA-2026-001",
+      "anio": 2026,
+      "fecha_publicacion": "2026-10-15",
+      "titulo": "Campaña «IA con criterio» · Supervisión Humana (Caso Bibliochecker)",
+      "nombre_archivo": "afiche-campana-ia-con-criterio.png",
+      "url_recurso": "assets/img/afiche-campana-ia-con-criterio.png",
+      "formato": "PNG",
+      "pilar_rediia": "3. Creación de Capacidades y Transferencia",
+      "tema_principal": "Supervisión Humana y Verificación Científica con IA",
+      "areas_interes": ["Supervisión Humana", "Bibliochecker", "Investigación UNED", "IA con criterio"],
+      "interpretacion_semantica": {
+        "resumen_ejecutivo": "Afiche oficial de la campaña de sensibilización «IA con criterio» de la UNED sobre el principio de Supervisión Humana: «La IA propone; las personas deciden, supervisan y asumen la responsabilidad». Presenta el caso de uso Bibliochecker de la Vicerrectoría de Investigación.",
+        "hallazgos_y_datos_clave": [
+          "Caso de uso real UNED: Bibliochecker es una herramienta web orientada a verificar referencias bibliográficas y detectar posibles alucinaciones generadas por IA.",
+          "Promueve la revisión crítica de resultados, la validación de fuentes primarias y el uso responsable en procesos de investigación.",
+          "Fortalece la confianza científica mediante validación humana sistemática."
+        ],
+        "texto_extraido_ocr": "UNED Universidad Estatal a Distancia. IA con criterio. Principio ético de la IA: Supervisión Humana. La IA propone; las personas deciden, supervisan y asumen la responsabilidad. Caso de uso: Bibliochecker, Vicerrectoría de Investigación - UNED.",
+        "accesibilidad_alt": "Afiche institucional de la campaña IA con criterio sobre el principio ético de Supervisión Humana y la herramienta Bibliochecker de la Vicerrectoría de Investigación UNED."
+      },
+      "referencia_documental": {
+        "titulo": "Política Institucional de Inteligencia Artificial en la UNED (2025)",
+        "tipo": "Política Institucional PDF",
+        "url": "documentos/politica-institucional-ia-uned-2025.pdf"
+      }
+    },
+    {
+      "id": "INF-REDIIA-2026-002",
+      "anio": 2026,
+      "fecha_publicacion": "2026-08-20",
+      "titulo": "Co-Intelligence: Living and Working with AI (Ethan Mollick)",
+      "nombre_archivo": "co-intelligence.jpg",
+      "url_recurso": "assets/img/infografias/co-intelligence.jpg",
+      "formato": "JPG",
+      "pilar_rediia": "3. Creación de Capacidades y Transferencia",
+      "tema_principal": "Co-Inteligencia Humano-IA y Alfabetización Crítica",
+      "areas_interes": ["Co-inteligencia", "Human-in-the-loop", "Pedagogía", "Productividad Académica"],
+      "interpretacion_semantica": {
+        "resumen_ejecutivo": "Síntesis visual de la obra de Ethan Mollick (Wharton/UPenn) sobre cómo colaborar con sistemas de IA generativa como co-inteligencia que amplifica el juicio humano sin sustituir la agencia cognitiva.",
+        "hallazgos_y_datos_clave": [
+          "Invita a integrar la IA en el flujo de trabajo académico con supervisión humana activa (Human-in-the-loop).",
+          "Destaca el rol de la IA como tutor, simulador y colaborador cuando se diseña con intencionalidad pedagógica.",
+          "Alineado con los principios de Creatividad Humana y Supervisión Humana de la Política de IA UNED."
+        ],
+        "texto_extraido_ocr": "Co-Intelligence: Living and Working with AI - Ethan Mollick. Principios de colaboración humano-IA y amplificación de capacidades.",
+        "accesibilidad_alt": "Infografía resumen del libro Co-Intelligence de Ethan Mollick sobre colaboración entre inteligencia humana e inteligencia artificial."
+      },
+      "referencia_documental": {
+        "titulo": "Marco de Aplicación para el Uso de la IA en la Docencia UNED (2026)",
+        "tipo": "Documento Normativo PDF",
+        "url": "documentos/marco-aplicacion-ia-docencia-uned-2026.pdf"
+      }
+    },
+    {
+      "id": "INF-REDIIA-2026-003",
+      "anio": 2026,
+      "fecha_publicacion": "2026-08-20",
+      "titulo": "La Redarquía en la Práctica: Más allá de la Jerarquía (José Cabrera)",
+      "nombre_archivo": "la-redarquia-en-la-practica.jpg",
+      "url_recurso": "assets/img/infografias/la-redarquia-en-la-practica.jpg",
+      "formato": "JPG",
+      "pilar_rediia": "1. Coordinación y Coherencia Institucional",
+      "tema_principal": "Arquitectura de Redes Colaborativas y Gobernanza Distribuida",
+      "areas_interes": ["Redarquía", "Nodos Temáticos", "Liderazgo Colectivo", "Inteligencia Colectiva"],
+      "interpretacion_semantica": {
+        "resumen_ejecutivo": "Fundamento organizacional del modelo de red viva de RedIIA: cómo articular nodos autoorganizados alrededor de propósitos compartidos sin crear estructuras burocráticas paralelas a la jerarquía formal universitaria.",
+        "hallazgos_y_datos_clave": [
+          "En una redarquía la autoridad emerge del aporte de valor, la confianza y las relaciones de colaboración activas entre actantes.",
+          "Complementa la estructura formal de las Vicerrectorías de la UNED mediante nodos temporales ágiles orientados a retos transversales.",
+          "Sustenta el diseño del Núcleo Gestor colegiado y el ciclo de vida de Nodos Temáticos."
+        ],
+        "texto_extraido_ocr": "La redarquía en la práctica - José Cabrera. Orden emergente de las redes colaborativas, nodos, propósito compartido y liderazgo distribuido.",
+        "accesibilidad_alt": "Infografía del libro La redarquía en la práctica sobre estructuras organizacionales en red y colaboración horizontal."
+      },
+      "referencia_documental": {
+        "titulo": "Presentación: RedIIA como Red Viva",
+        "tipo": "Presentación PDF",
+        "url": "documentos/rediia-como-red-viva-2026.pdf"
+      }
+    },
+    {
+      "id": "INF-REDIIA-2026-004",
+      "anio": 2026,
+      "fecha_publicacion": "2026-08-20",
+      "titulo": "The Coming Wave: Technology, Power, and the Twenty-first Century's Greatest Dilemma (Mustafa Suleyman)",
+      "nombre_archivo": "the-coming-wave.jpg",
+      "url_recurso": "assets/img/infografias/the-coming-wave.jpg",
+      "formato": "JPG",
+      "pilar_rediia": "2. Integración Tecnológica Segura y Ética",
+      "tema_principal": "Gobernanza Anticipatoria, Contención de Riesgos y Soberanía Tecnológica",
+      "areas_interes": ["Gobernanza de Riesgos", "Umbrales de Intervención", "IA", "Seguridad"],
+      "interpretacion_semantica": {
+        "resumen_ejecutivo": "Análisis de Mustafa Suleyman sobre la proliferación acelerada de la IA generativa y agéntica, el dilema del control tecnológico y la necesidad de mecanismos de gobernanza proporcionales al riesgo.",
+        "hallazgos_y_datos_clave": [
+          "Explica por qué los marcos regulatorios tradicionales van rezagados frente a la velocidad de despliegue de modelos autónomos.",
+          "Fundamenta la creación del Sandbox Institucional de IA y de la Matriz de Umbrales de Riesgo de 5 niveles en la UNED.",
+          "Subraya la importancia de la trazabilidad, las salvaguardas éticas y la auditoría técnica continua."
+        ],
+        "texto_extraido_ocr": "The Coming Wave - Mustafa Suleyman. Proliferación tecnológica, asimetría de impacto, gobernanza y contención responsable.",
+        "accesibilidad_alt": "Infografía del libro The Coming Wave de Mustafa Suleyman sobre los desafíos de gobernanza y seguridad de la ola tecnológica de IA."
+      },
+      "referencia_documental": {
+        "titulo": "Dictamen Proyecto de Ley N.° 23.919 (Sandboxes de IA)",
+        "tipo": "Documento Legislativo PDF",
+        "url": "documentos/dictamen-proyecto-ley-23919-sandboxes-ia.pdf"
+      }
+    },
+    {
+      "id": "INF-REDIIA-2026-005",
+      "anio": 2026,
+      "fecha_publicacion": "2026-08-20",
+      "titulo": "The Geek Way: The Radical Mindset that Drives Extraordinary Results (Andrew McAfee)",
+      "nombre_archivo": "the-geek-way.jpg",
+      "url_recurso": "assets/img/infografias/the-geek-way.jpg",
+      "formato": "JPG",
+      "pilar_rediia": "1. Coordinación y Coherencia Institucional",
+      "tema_principal": "Cultura de Ciencia, Evidencia, Apertura, Velocidad y Propiedad",
+      "areas_interes": ["Experimentación en Sandbox", "Evidencia Empírica", "Iteración Rápida", "Apertura"],
+      "interpretacion_semantica": {
+        "resumen_ejecutivo": "Las cuatro normas culturales propuestas por Andrew McAfee (MIT): Ciencia (debate basado en evidencia), Propiedad (autonomía alineada), Velocidad (iteración y retroalimentación rápida) y Apertura (transparencia y capacidad de rectificar).",
+        "hallazgos_y_datos_clave": [
+          "Sustituye la burocracia defensiva por ciclos cortos de experimentación documentada con métricas claras.",
+          "Inspira el diseño de los pilotos trimestrales del Sandbox Institucional de IA y las fichas de evidencia de RedIIA.",
+          "Promueve la seguridad psicológica para reportar fallos tempranos y transferir aprendizajes entre Vicerrectorías."
+        ],
+        "texto_extraido_ocr": "The Geek Way - Andrew McAfee. Science, Ownership, Speed, Openness: cultura de experimentación basada en evidencia.",
+        "accesibilidad_alt": "Infografía del libro The Geek Way de Andrew McAfee sobre las cuatro normas de innovación organizacional: ciencia, propiedad, velocidad y apertura."
+      },
+      "referencia_documental": {
+        "titulo": "Propuesta de Ruta de Trabajo RedIIA UNED (2026)",
+        "tipo": "Documento Institucional PDF",
+        "url": "documentos/propuesta-ruta-trabajo-rediia-conre-2026.pdf"
+      }
+    },
+    {
+      "id": "INF-REDIIA-2026-006",
+      "anio": 2026,
+      "fecha_publicacion": "2026-08-20",
+      "titulo": "Competing in the Age of AI: Strategy and Leadership When Algorithms and Networks Run the World (Iansiti & Lakhani)",
+      "nombre_archivo": "competing-in-the-age-of-ai.jpg",
+      "url_recurso": "assets/img/infografias/competing-in-the-age-of-ai.jpg",
+      "formato": "JPG",
+      "pilar_rediia": "4. Investigación e Innovación Interdisciplinaria",
+      "tema_principal": "Transformación de Procesos, Arquitectura de Datos y Liderazgo Institucional",
+      "areas_interes": ["Transformación Digital", "Interoperabilidad", "Gobernanza de Datos", "Valor Público"],
+      "interpretacion_semantica": {
+        "resumen_ejecutivo": "Marco de Marco Iansiti y Karim Lakhani (Harvard) sobre cómo las organizaciones rediseñan su arquitectura operativa eliminando silos de datos y conectando redes de aprendizaje.",
+        "hallazgos_y_datos_clave": [
+          "Advierte que el cuello de botella no es el algoritmo, sino los silos organizacionales y la fragmentación de procesos.",
+          "Coincide con los hallazgos sobre interoperabilidad de datos y articulación transversal en la UNED.",
+          "Plantea la ética digital y la gobernanza de datos como cimientos estratégicos de cualquier transformación institucional."
+        ],
+        "texto_extraido_ocr": "Competing in the Age of AI - Marco Iansiti & Karim Lakhani. Arquitectura integrada, eliminación de silos y escala de aprendizaje.",
+        "accesibilidad_alt": "Infografía del libro Competing in the Age of AI de Iansiti y Lakhani sobre rediseño operativo, redes y gobernanza de datos."
+      },
+      "referencia_documental": {
+        "titulo": "Presentación: RedIIA como Red Viva",
+        "tipo": "Presentación PDF",
+        "url": "documentos/rediia-como-red-viva-2026.pdf"
+      }
+    },
+    {
+      "id": "INF-REDIIA-2026-007",
+      "anio": 2026,
+      "fecha_publicacion": "2026-08-20",
+      "titulo": "Chip War: The Fight for the World's Most Critical Technology (Chris Miller)",
+      "nombre_archivo": "chip-war.jpg",
+      "url_recurso": "assets/img/infografias/chip-war.jpg",
+      "formato": "JPG",
+      "pilar_rediia": "3. Creación de Capacidades y Transferencia",
+      "tema_principal": "Infraestructura Física de la IA, Geopolítica de Semiconductores y Sostenibilidad",
+      "areas_interes": ["Infraestructura de Cómputo", "Soberanía Tecnológica", "Sostenibilidad", "Cadena de Suministro"],
+      "interpretacion_semantica": {
+        "resumen_ejecutivo": "Recorrido histórico y geopolítico de Chris Miller sobre la cadena global de semiconductores y el hardware que sostiene el entrenamiento y despliegue de la Inteligencia Artificial moderna.",
+        "hallazgos_y_datos_clave": [
+          "Visibiliza la materialidad física, energética y geopolítica detrás de los modelos de lenguaje y centros de datos.",
+          "Conecta directamente con el Principio de Sostenibilidad de la Política de IA UNED y con el Instrumento C (Diagnóstico de Infraestructura).",
+          "Aporta contexto crítico para las decisiones de soberanía tecnológica y diversificación de proveedores en universidades públicas."
+        ],
+        "texto_extraido_ocr": "Chip War - Chris Miller. Geopolítica de los semiconductores, poder de cómputo e infraestructura crítica de la IA.",
+        "accesibilidad_alt": "Infografía del libro Chip War de Chris Miller sobre la historia y geopolítica de los microchips e infraestructura de cómputo."
+      },
+      "referencia_documental": {
+        "titulo": "Plan de Acción Estrategia Nacional de Inteligencia Artificial (ENIA MICITT 2025)",
+        "tipo": "Estrategia Nacional PDF",
+        "url": "documentos/plan-accion-enia-micitt-2025.pdf"
+      }
+    }
+  ]
+}
